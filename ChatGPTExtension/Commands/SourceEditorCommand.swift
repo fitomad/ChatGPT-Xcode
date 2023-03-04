@@ -18,8 +18,14 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
         }
         
         Task {
-            let suggestion = try await self.useCase.analyze(source: codeLines)
-            print(suggestion.result)
+            do {
+                let suggestion = try await self.useCase.analyze(source: codeLines)
+                
+                invocation.buffer.lines.removeAllObjects()
+                invocation.buffer.lines.add(suggestion.result)
+            } catch let error {
+                print("🚨 Something goes wrong... \(error)")
+            }
             
             completionHandler(nil)
         }

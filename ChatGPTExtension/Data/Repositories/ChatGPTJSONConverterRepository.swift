@@ -9,7 +9,18 @@ import Foundation
 
 final class ChatGPTJSONConverterRepository: JSONConverterRepository {
     func analyze(code: String) async throws -> [Suggestion] {
-        let openAI = OpenAI(key: "")
+        let currentBundle = Bundle(for: Self.self)
+        
+        guard let apiKeyURL = currentBundle.url(forResource: "openai", withExtension: "environment"),
+              var apiKey = try? String(contentsOf: apiKeyURL, encoding: .utf8)
+        else
+        {
+            throw ConverterError.authorization
+        }
+        
+        apiKey = apiKey.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        let openAI = OpenAI(key: apiKey)
         
         var suggestions: [Suggestion]?
         

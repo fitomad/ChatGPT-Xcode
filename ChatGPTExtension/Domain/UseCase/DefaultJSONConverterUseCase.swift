@@ -16,7 +16,7 @@ final class DefaultJSONConverterUseCase: JSONConverterUseCase {
     
     func analyze(source code: [String]) async throws -> Suggestion {
         let preparedCode = code.reduce("") { $0 + $1 }
-        print(preparedCode)
+        
         let suggestions = try await self.repository.analyze(code: preparedCode)
         
         guard let suggestion = suggestions.first else {
