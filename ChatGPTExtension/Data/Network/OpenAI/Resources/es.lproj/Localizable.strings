@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  ChatGPT
+
+  Created by Adolfo Vera Blasco on 4/3/23.
+  
+*/
+
+"PROMPT_JSON" = "Convierte este JSON a una estructura Swift pero sin la implementación";

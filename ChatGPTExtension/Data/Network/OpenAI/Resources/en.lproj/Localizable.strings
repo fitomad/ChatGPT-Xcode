@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  ChatGPT
+
+  Created by Adolfo Vera Blasco on 4/3/23.
+  
+*/
+
+"PROMPT_JSON" = "Convert this JSON to a Swift Codable data structure only struct declaration";
