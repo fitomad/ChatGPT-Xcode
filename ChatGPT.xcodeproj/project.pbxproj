@@ -15,6 +15,12 @@
 		91BCF70629B3C18E00C022E9 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FFEE6729B2824B00B4DE2A /* XcodeKit.framework */; };
 		91BCF70729B3C18E00C022E9 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91FFEE6729B2824B00B4DE2A /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		91CD167629B3D8FF0018CA5A /* openai.environment in Resources */ = {isa = PBXBuildFile; fileRef = 91CD167529B3D8FF0018CA5A /* openai.environment */; };
+		91CD167A29B3F1EF0018CA5A /* CodeSmellsEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CD167929B3F1EF0018CA5A /* CodeSmellsEditorCommand.swift */; };
+		91CD167C29B3F35B0018CA5A /* CodeSmellsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CD167B29B3F35B0018CA5A /* CodeSmellsUseCase.swift */; };
+		91CD167E29B3F39C0018CA5A /* DefaultCodeSmellsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CD167D29B3F39C0018CA5A /* DefaultCodeSmellsUseCase.swift */; };
+		91CD168029B3F50C0018CA5A /* CodeSmellsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CD167F29B3F50C0018CA5A /* CodeSmellsRepository.swift */; };
+		91CD168229B3F5410018CA5A /* ChatGPTCodeSmellsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CD168129B3F5410018CA5A /* ChatGPTCodeSmellsRepository.swift */; };
+		91CD168429B3F7970018CA5A /* BaseChatGPTRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CD168329B3F7970018CA5A /* BaseChatGPTRepository.swift */; };
 		91E2684A29B39ACC0098BBB5 /* JSONConverterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E2684929B39ACC0098BBB5 /* JSONConverterUseCase.swift */; };
 		91E2684C29B39B6F0098BBB5 /* DefaultJSONConverterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E2684B29B39B6F0098BBB5 /* DefaultJSONConverterUseCase.swift */; };
 		91E2684E29B3A7510098BBB5 /* Suggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E2684D29B3A7510098BBB5 /* Suggestion.swift */; };
@@ -77,6 +83,12 @@
 		9126724729B359CA0076A294 /* JSONConverterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONConverterRepository.swift; sourceTree = "<group>"; };
 		9126724929B35A000076A294 /* ChatGPTJSONConverterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTJSONConverterRepository.swift; sourceTree = "<group>"; };
 		91CD167529B3D8FF0018CA5A /* openai.environment */ = {isa = PBXFileReference; lastKnownFileType = text; path = openai.environment; sourceTree = "<group>"; };
+		91CD167929B3F1EF0018CA5A /* CodeSmellsEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSmellsEditorCommand.swift; sourceTree = "<group>"; };
+		91CD167B29B3F35B0018CA5A /* CodeSmellsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSmellsUseCase.swift; sourceTree = "<group>"; };
+		91CD167D29B3F39C0018CA5A /* DefaultCodeSmellsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCodeSmellsUseCase.swift; sourceTree = "<group>"; };
+		91CD167F29B3F50C0018CA5A /* CodeSmellsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSmellsRepository.swift; sourceTree = "<group>"; };
+		91CD168129B3F5410018CA5A /* ChatGPTCodeSmellsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTCodeSmellsRepository.swift; sourceTree = "<group>"; };
+		91CD168329B3F7970018CA5A /* BaseChatGPTRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseChatGPTRepository.swift; sourceTree = "<group>"; };
 		91E2684929B39ACC0098BBB5 /* JSONConverterUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONConverterUseCase.swift; sourceTree = "<group>"; };
 		91E2684B29B39B6F0098BBB5 /* DefaultJSONConverterUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultJSONConverterUseCase.swift; sourceTree = "<group>"; };
 		91E2684D29B3A7510098BBB5 /* Suggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suggestion.swift; sourceTree = "<group>"; };
@@ -147,6 +159,8 @@
 			children = (
 				91E2684929B39ACC0098BBB5 /* JSONConverterUseCase.swift */,
 				91E2684B29B39B6F0098BBB5 /* DefaultJSONConverterUseCase.swift */,
+				91CD167B29B3F35B0018CA5A /* CodeSmellsUseCase.swift */,
+				91CD167D29B3F39C0018CA5A /* DefaultCodeSmellsUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -155,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				9126724729B359CA0076A294 /* JSONConverterRepository.swift */,
+				91CD167F29B3F50C0018CA5A /* CodeSmellsRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -178,8 +193,9 @@
 		91BCF70529B3C0D700C022E9 /* Commands */ = {
 			isa = PBXGroup;
 			children = (
+				91CD167829B3F1A00018CA5A /* CodeSmells */,
+				91CD167729B3F1860018CA5A /* JSON2Swift */,
 				91FFEE6A29B2824B00B4DE2A /* SourceEditorExtension.swift */,
-				91FFEE6C29B2824B00B4DE2A /* SourceEditorCommand.swift */,
 			);
 			path = Commands;
 			sourceTree = "<group>";
@@ -190,6 +206,22 @@
 				91CD167529B3D8FF0018CA5A /* openai.environment */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		91CD167729B3F1860018CA5A /* JSON2Swift */ = {
+			isa = PBXGroup;
+			children = (
+				91FFEE6C29B2824B00B4DE2A /* SourceEditorCommand.swift */,
+			);
+			path = JSON2Swift;
+			sourceTree = "<group>";
+		};
+		91CD167829B3F1A00018CA5A /* CodeSmells */ = {
+			isa = PBXGroup;
+			children = (
+				91CD167929B3F1EF0018CA5A /* CodeSmellsEditorCommand.swift */,
+			);
+			path = CodeSmells;
 			sourceTree = "<group>";
 		};
 		91E2684F29B3A8E40098BBB5 /* Resources */ = {
@@ -302,6 +334,8 @@
 			isa = PBXGroup;
 			children = (
 				9126724929B35A000076A294 /* ChatGPTJSONConverterRepository.swift */,
+				91CD168129B3F5410018CA5A /* ChatGPTCodeSmellsRepository.swift */,
+				91CD168329B3F7970018CA5A /* BaseChatGPTRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -433,17 +467,23 @@
 			files = (
 				91FFEE8329B288F000B4DE2A /* Constants.swift in Sources */,
 				91E2685C29B3B3C50098BBB5 /* ConverterError.swift in Sources */,
+				91CD167A29B3F1EF0018CA5A /* CodeSmellsEditorCommand.swift in Sources */,
 				91FFEE7C29B2838000B4DE2A /* OpenAI.swift in Sources */,
+				91CD168029B3F50C0018CA5A /* CodeSmellsRepository.swift in Sources */,
 				9126724A29B35A000076A294 /* ChatGPTJSONConverterRepository.swift in Sources */,
+				91CD167E29B3F39C0018CA5A /* DefaultCodeSmellsUseCase.swift in Sources */,
 				9126724629B350320076A294 /* ChatGPTError.swift in Sources */,
 				91E2684E29B3A7510098BBB5 /* Suggestion.swift in Sources */,
+				91CD168229B3F5410018CA5A /* ChatGPTCodeSmellsRepository.swift in Sources */,
 				91E2685329B3AA2C0098BBB5 /* ChatGPTRequest.swift in Sources */,
 				91FFEE6B29B2824B00B4DE2A /* SourceEditorExtension.swift in Sources */,
 				91FFEE6D29B2824B00B4DE2A /* SourceEditorCommand.swift in Sources */,
 				911729AD29B32E780066F46E /* DependencyManager.swift in Sources */,
+				91CD168429B3F7970018CA5A /* BaseChatGPTRepository.swift in Sources */,
 				9126724829B359CA0076A294 /* JSONConverterRepository.swift in Sources */,
 				91E2684C29B39B6F0098BBB5 /* DefaultJSONConverterUseCase.swift in Sources */,
 				91E2684A29B39ACC0098BBB5 /* JSONConverterUseCase.swift in Sources */,
+				91CD167C29B3F35B0018CA5A /* CodeSmellsUseCase.swift in Sources */,
 				91FFEE7F29B2854200B4DE2A /* NetworkRequest.swift in Sources */,
 				911729AF29B32FFB0066F46E /* ChatGPTResponse.swift in Sources */,
 				91E2685629B3AC820098BBB5 /* OpenAI+Localizable.swift in Sources */,

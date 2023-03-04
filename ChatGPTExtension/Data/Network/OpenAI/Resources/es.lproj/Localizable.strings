@@ -7,3 +7,4 @@
 */
 
 "PROMPT_JSON" = "Convierte este JSON a una estructura Swift pero sin la implementación";
+"PROMPT_CODE_SMELLS" = "Busca posibles Code Smells en este código Swift";

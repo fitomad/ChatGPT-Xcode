@@ -16,6 +16,15 @@
 					<key>XCSourceEditorCommandName</key>
 					<string>JSON to Swift</string>
 				</dict>
+                
+                <dict>
+                    <key>XCSourceEditorCommandClassName</key>
+                    <string>$(PRODUCT_MODULE_NAME).CodeSmellsEditorCommand</string>
+                    <key>XCSourceEditorCommandIdentifier</key>
+                    <string>$(PRODUCT_BUNDLE_IDENTIFIER).CodeSmellsEditorCommand</string>
+                    <key>XCSourceEditorCommandName</key>
+                    <string>Check for Code Smells</string>
+                </dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
 			<string>$(PRODUCT_MODULE_NAME).SourceEditorExtension</string>

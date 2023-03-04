@@ -1,5 +1,5 @@
 //
-//  ChatGPTAnalyzeRepository.swift
+//  ChatGPTCodeSmellsRepository.swift
 //  ChatGPTExtension
 //
 //  Created by Adolfo Vera Blasco on 4/3/23.
@@ -7,8 +7,8 @@
 
 import Foundation
 
-final class ChatGPTJSONConverterRepository: BaseChatGPTRepository, JSONConverterRepository {
-    func analyze(code: String) async throws -> [Suggestion] {
+final class ChatGPTCodeSmellsRepository: BaseChatGPTRepository, CodeSmellsRepository {
+    func searchForCodeSmells(in code: String) async throws -> [Suggestion] {
         guard let apiKey = super.fetchApiKey() else {
             throw ConverterError.authorization
         }
@@ -18,7 +18,7 @@ final class ChatGPTJSONConverterRepository: BaseChatGPTRepository, JSONConverter
         var suggestions: [Suggestion]?
         
         do {
-            let chatpGPTResponse = try await openAI.analyze(source: code)
+            let chatpGPTResponse = try await openAI.codeSmellsFor(code: code)
             
             suggestions = chatpGPTResponse.choices.map { choice in
                 let suggestion = Suggestion(result: choice.message.content)
