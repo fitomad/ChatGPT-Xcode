@@ -10,9 +10,9 @@
 			<array>
 				<dict>
 					<key>XCSourceEditorCommandClassName</key>
-					<string>$(PRODUCT_MODULE_NAME).SourceEditorCommand</string>
+					<string>$(PRODUCT_MODULE_NAME).JSON2SwiftEditorCommand</string>
 					<key>XCSourceEditorCommandIdentifier</key>
-					<string>$(PRODUCT_BUNDLE_IDENTIFIER).SourceEditorCommand</string>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).JSON2SwiftEditorCommand</string>
 					<key>XCSourceEditorCommandName</key>
 					<string>JSON to Swift</string>
 				</dict>
@@ -24,6 +24,15 @@
                     <string>$(PRODUCT_BUNDLE_IDENTIFIER).CodeSmellsEditorCommand</string>
                     <key>XCSourceEditorCommandName</key>
                     <string>Check for Code Smells</string>
+                </dict>
+                
+                <dict>
+                    <key>XCSourceEditorCommandClassName</key>
+                    <string>$(PRODUCT_MODULE_NAME).ExplainCodeCommand</string>
+                    <key>XCSourceEditorCommandIdentifier</key>
+                    <string>$(PRODUCT_BUNDLE_IDENTIFIER).ExplainCodeCommand</string>
+                    <key>XCSourceEditorCommandName</key>
+                    <string>Explain me this code</string>
                 </dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>

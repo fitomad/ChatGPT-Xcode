@@ -20,19 +20,7 @@ final class OpenAI {
         ]
     }
     
-    func codeSmellsFor(code: String) async throws -> ChatGPTResponse {
-        let smellsPrompt = "\(localizedPrompt("PROMPT_CODE_SMELLS")) \(code)"
-        
-        return try await processRequestFor(prompt: smellsPrompt)
-    }
-    
-    func analyze(source code: String) async throws -> ChatGPTResponse {
-        let jsonPrompt = "\(localizedPrompt("PROMPT_JSON")) \(code)"
-        
-        return try await processRequestFor(prompt: jsonPrompt)
-    }
-    
-    private func processRequestFor(prompt: String) async throws -> ChatGPTResponse {
+    internal func processRequestFor(prompt: String) async throws -> ChatGPTResponse {
         let chatGRTRequest = ChatGPTRequest(prompt: prompt)
         let data = try? JSONEncoder().encode(chatGRTRequest)
         

@@ -12,6 +12,7 @@
 		9126724629B350320076A294 /* ChatGPTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9126724529B350320076A294 /* ChatGPTError.swift */; };
 		9126724829B359CA0076A294 /* JSONConverterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9126724729B359CA0076A294 /* JSONConverterRepository.swift */; };
 		9126724A29B35A000076A294 /* ChatGPTJSONConverterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9126724929B35A000076A294 /* ChatGPTJSONConverterRepository.swift */; };
+		91A043D629B48CB60077238E /* OpenAI+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A043D529B48CB60077238E /* OpenAI+Operations.swift */; };
 		91BCF70629B3C18E00C022E9 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FFEE6729B2824B00B4DE2A /* XcodeKit.framework */; };
 		91BCF70729B3C18E00C022E9 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91FFEE6729B2824B00B4DE2A /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		91CD167629B3D8FF0018CA5A /* openai.environment in Resources */ = {isa = PBXBuildFile; fileRef = 91CD167529B3D8FF0018CA5A /* openai.environment */; };
@@ -28,13 +29,18 @@
 		91E2685629B3AC820098BBB5 /* OpenAI+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E2685529B3AC820098BBB5 /* OpenAI+Localizable.swift */; };
 		91E2685729B3ADDE0098BBB5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91E2685929B3ADDE0098BBB5 /* Localizable.strings */; };
 		91E2685C29B3B3C50098BBB5 /* ConverterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E2685B29B3B3C50098BBB5 /* ConverterError.swift */; };
+		91FAD36E29B4784800917E35 /* ExplainCodeCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FAD36D29B4784800917E35 /* ExplainCodeCommand.swift */; };
+		91FAD37029B478A000917E35 /* ExplainCodeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FAD36F29B478A000917E35 /* ExplainCodeUseCase.swift */; };
+		91FAD37229B478FD00917E35 /* DefaultExplainCodeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FAD37129B478FD00917E35 /* DefaultExplainCodeUseCase.swift */; };
+		91FAD37429B4796600917E35 /* ExplainCodeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FAD37329B4796600917E35 /* ExplainCodeRepository.swift */; };
+		91FAD37629B47AEA00917E35 /* ChatGPTExplainCodeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FAD37529B47AEA00917E35 /* ChatGPTExplainCodeRepository.swift */; };
 		91FFEE5129B2822000B4DE2A /* ChatGPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFEE5029B2822000B4DE2A /* ChatGPTApp.swift */; };
 		91FFEE5329B2822000B4DE2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFEE5229B2822000B4DE2A /* ContentView.swift */; };
 		91FFEE5529B2822100B4DE2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91FFEE5429B2822100B4DE2A /* Assets.xcassets */; };
 		91FFEE5829B2822100B4DE2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91FFEE5729B2822100B4DE2A /* Preview Assets.xcassets */; };
 		91FFEE6629B2824B00B4DE2A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FFEE6529B2824B00B4DE2A /* Cocoa.framework */; };
 		91FFEE6B29B2824B00B4DE2A /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFEE6A29B2824B00B4DE2A /* SourceEditorExtension.swift */; };
-		91FFEE6D29B2824B00B4DE2A /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFEE6C29B2824B00B4DE2A /* SourceEditorCommand.swift */; };
+		91FFEE6D29B2824B00B4DE2A /* JSON2SwiftEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFEE6C29B2824B00B4DE2A /* JSON2SwiftEditorCommand.swift */; };
 		91FFEE7229B2824B00B4DE2A /* ChatGPTExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 91FFEE6329B2824B00B4DE2A /* ChatGPTExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		91FFEE7C29B2838000B4DE2A /* OpenAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFEE7B29B2838000B4DE2A /* OpenAI.swift */; };
 		91FFEE7F29B2854200B4DE2A /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFEE7E29B2854200B4DE2A /* NetworkRequest.swift */; };
@@ -82,6 +88,7 @@
 		9126724529B350320076A294 /* ChatGPTError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTError.swift; sourceTree = "<group>"; };
 		9126724729B359CA0076A294 /* JSONConverterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONConverterRepository.swift; sourceTree = "<group>"; };
 		9126724929B35A000076A294 /* ChatGPTJSONConverterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTJSONConverterRepository.swift; sourceTree = "<group>"; };
+		91A043D529B48CB60077238E /* OpenAI+Operations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OpenAI+Operations.swift"; sourceTree = "<group>"; };
 		91CD167529B3D8FF0018CA5A /* openai.environment */ = {isa = PBXFileReference; lastKnownFileType = text; path = openai.environment; sourceTree = "<group>"; };
 		91CD167929B3F1EF0018CA5A /* CodeSmellsEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSmellsEditorCommand.swift; sourceTree = "<group>"; };
 		91CD167B29B3F35B0018CA5A /* CodeSmellsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSmellsUseCase.swift; sourceTree = "<group>"; };
@@ -97,6 +104,11 @@
 		91E2685829B3ADDE0098BBB5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		91E2685A29B3ADE30098BBB5 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		91E2685B29B3B3C50098BBB5 /* ConverterError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterError.swift; sourceTree = "<group>"; };
+		91FAD36D29B4784800917E35 /* ExplainCodeCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainCodeCommand.swift; sourceTree = "<group>"; };
+		91FAD36F29B478A000917E35 /* ExplainCodeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainCodeUseCase.swift; sourceTree = "<group>"; };
+		91FAD37129B478FD00917E35 /* DefaultExplainCodeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultExplainCodeUseCase.swift; sourceTree = "<group>"; };
+		91FAD37329B4796600917E35 /* ExplainCodeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainCodeRepository.swift; sourceTree = "<group>"; };
+		91FAD37529B47AEA00917E35 /* ChatGPTExplainCodeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTExplainCodeRepository.swift; sourceTree = "<group>"; };
 		91FFEE4D29B2822000B4DE2A /* ChatGPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatGPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91FFEE5029B2822000B4DE2A /* ChatGPTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTApp.swift; sourceTree = "<group>"; };
 		91FFEE5229B2822000B4DE2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,7 +119,7 @@
 		91FFEE6529B2824B00B4DE2A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		91FFEE6729B2824B00B4DE2A /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 		91FFEE6A29B2824B00B4DE2A /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
-		91FFEE6C29B2824B00B4DE2A /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		91FFEE6C29B2824B00B4DE2A /* JSON2SwiftEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON2SwiftEditorCommand.swift; sourceTree = "<group>"; };
 		91FFEE6E29B2824B00B4DE2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91FFEE6F29B2824B00B4DE2A /* ChatGPTExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChatGPTExtension.entitlements; sourceTree = "<group>"; };
 		91FFEE7B29B2838000B4DE2A /* OpenAI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAI.swift; sourceTree = "<group>"; };
@@ -157,10 +169,9 @@
 		911729A829B32E230066F46E /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
-				91E2684929B39ACC0098BBB5 /* JSONConverterUseCase.swift */,
-				91E2684B29B39B6F0098BBB5 /* DefaultJSONConverterUseCase.swift */,
-				91CD167B29B3F35B0018CA5A /* CodeSmellsUseCase.swift */,
-				91CD167D29B3F39C0018CA5A /* DefaultCodeSmellsUseCase.swift */,
+				91AE7F6F29B48BB20037466B /* ExplainCode */,
+				91AE7F6E29B48BA70037466B /* CodeSmells */,
+				91AE7F6D29B48B970037466B /* JSON2Swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -170,6 +181,7 @@
 			children = (
 				9126724729B359CA0076A294 /* JSONConverterRepository.swift */,
 				91CD167F29B3F50C0018CA5A /* CodeSmellsRepository.swift */,
+				91FAD37329B4796600917E35 /* ExplainCodeRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -190,9 +202,37 @@
 			path = Dependencies;
 			sourceTree = "<group>";
 		};
+		91AE7F6D29B48B970037466B /* JSON2Swift */ = {
+			isa = PBXGroup;
+			children = (
+				91E2684929B39ACC0098BBB5 /* JSONConverterUseCase.swift */,
+				91E2684B29B39B6F0098BBB5 /* DefaultJSONConverterUseCase.swift */,
+			);
+			path = JSON2Swift;
+			sourceTree = "<group>";
+		};
+		91AE7F6E29B48BA70037466B /* CodeSmells */ = {
+			isa = PBXGroup;
+			children = (
+				91CD167B29B3F35B0018CA5A /* CodeSmellsUseCase.swift */,
+				91CD167D29B3F39C0018CA5A /* DefaultCodeSmellsUseCase.swift */,
+			);
+			path = CodeSmells;
+			sourceTree = "<group>";
+		};
+		91AE7F6F29B48BB20037466B /* ExplainCode */ = {
+			isa = PBXGroup;
+			children = (
+				91FAD36F29B478A000917E35 /* ExplainCodeUseCase.swift */,
+				91FAD37129B478FD00917E35 /* DefaultExplainCodeUseCase.swift */,
+			);
+			path = ExplainCode;
+			sourceTree = "<group>";
+		};
 		91BCF70529B3C0D700C022E9 /* Commands */ = {
 			isa = PBXGroup;
 			children = (
+				91FAD36C29B4782E00917E35 /* ExplainCode */,
 				91CD167829B3F1A00018CA5A /* CodeSmells */,
 				91CD167729B3F1860018CA5A /* JSON2Swift */,
 				91FFEE6A29B2824B00B4DE2A /* SourceEditorExtension.swift */,
@@ -211,7 +251,7 @@
 		91CD167729B3F1860018CA5A /* JSON2Swift */ = {
 			isa = PBXGroup;
 			children = (
-				91FFEE6C29B2824B00B4DE2A /* SourceEditorCommand.swift */,
+				91FFEE6C29B2824B00B4DE2A /* JSON2SwiftEditorCommand.swift */,
 			);
 			path = JSON2Swift;
 			sourceTree = "<group>";
@@ -238,6 +278,14 @@
 				91E2685529B3AC820098BBB5 /* OpenAI+Localizable.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		91FAD36C29B4782E00917E35 /* ExplainCode */ = {
+			isa = PBXGroup;
+			children = (
+				91FAD36D29B4784800917E35 /* ExplainCodeCommand.swift */,
+			);
+			path = ExplainCode;
 			sourceTree = "<group>";
 		};
 		91FFEE4429B2822000B4DE2A = {
@@ -326,6 +374,7 @@
 				91E2684F29B3A8E40098BBB5 /* Resources */,
 				91FFEE7D29B2853400B4DE2A /* Model */,
 				91FFEE7B29B2838000B4DE2A /* OpenAI.swift */,
+				91A043D529B48CB60077238E /* OpenAI+Operations.swift */,
 			);
 			path = OpenAI;
 			sourceTree = "<group>";
@@ -336,6 +385,7 @@
 				9126724929B35A000076A294 /* ChatGPTJSONConverterRepository.swift */,
 				91CD168129B3F5410018CA5A /* ChatGPTCodeSmellsRepository.swift */,
 				91CD168329B3F7970018CA5A /* BaseChatGPTRepository.swift */,
+				91FAD37529B47AEA00917E35 /* ChatGPTExplainCodeRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -465,21 +515,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91FAD37029B478A000917E35 /* ExplainCodeUseCase.swift in Sources */,
 				91FFEE8329B288F000B4DE2A /* Constants.swift in Sources */,
+				91FAD37629B47AEA00917E35 /* ChatGPTExplainCodeRepository.swift in Sources */,
 				91E2685C29B3B3C50098BBB5 /* ConverterError.swift in Sources */,
 				91CD167A29B3F1EF0018CA5A /* CodeSmellsEditorCommand.swift in Sources */,
 				91FFEE7C29B2838000B4DE2A /* OpenAI.swift in Sources */,
 				91CD168029B3F50C0018CA5A /* CodeSmellsRepository.swift in Sources */,
 				9126724A29B35A000076A294 /* ChatGPTJSONConverterRepository.swift in Sources */,
 				91CD167E29B3F39C0018CA5A /* DefaultCodeSmellsUseCase.swift in Sources */,
+				91A043D629B48CB60077238E /* OpenAI+Operations.swift in Sources */,
 				9126724629B350320076A294 /* ChatGPTError.swift in Sources */,
 				91E2684E29B3A7510098BBB5 /* Suggestion.swift in Sources */,
+				91FAD37429B4796600917E35 /* ExplainCodeRepository.swift in Sources */,
 				91CD168229B3F5410018CA5A /* ChatGPTCodeSmellsRepository.swift in Sources */,
 				91E2685329B3AA2C0098BBB5 /* ChatGPTRequest.swift in Sources */,
 				91FFEE6B29B2824B00B4DE2A /* SourceEditorExtension.swift in Sources */,
-				91FFEE6D29B2824B00B4DE2A /* SourceEditorCommand.swift in Sources */,
+				91FAD36E29B4784800917E35 /* ExplainCodeCommand.swift in Sources */,
+				91FFEE6D29B2824B00B4DE2A /* JSON2SwiftEditorCommand.swift in Sources */,
 				911729AD29B32E780066F46E /* DependencyManager.swift in Sources */,
 				91CD168429B3F7970018CA5A /* BaseChatGPTRepository.swift in Sources */,
+				91FAD37229B478FD00917E35 /* DefaultExplainCodeUseCase.swift in Sources */,
 				9126724829B359CA0076A294 /* JSONConverterRepository.swift in Sources */,
 				91E2684C29B39B6F0098BBB5 /* DefaultJSONConverterUseCase.swift in Sources */,
 				91E2684A29B39ACC0098BBB5 /* JSONConverterUseCase.swift in Sources */,

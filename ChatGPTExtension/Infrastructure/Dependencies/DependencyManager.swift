@@ -21,4 +21,12 @@ final class DependencyManager {
         
         return useCase
     }
+    
+    static func makeExplainCodeDependencies() -> ExplainCodeUseCase {
+        let explainCodeRepository: ExplainCodeRepository = ChatGPTExplainCodeRepository()
+        let useCase: ExplainCodeUseCase = DefaultExplainCodeUseCase(repository: explainCodeRepository)
+        
+        return useCase
+    }
 }
+

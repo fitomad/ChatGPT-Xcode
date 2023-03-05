@@ -11,8 +11,9 @@ import XcodeKit
 final class CodeSmellsEditorCommand: NSObject, XCSourceEditorCommand {
     let useCase: CodeSmellsUseCase = DependencyManager.makeCodeSmellsDependencies()
     
-    func perform(with invocation: XCSourceEditorCommandInvocation) async throws {
+    func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void ) -> Void {
         guard let codeLines = invocation.buffer.lines as? [String] else {
+            completionHandler(nil)
             return
         }
         
@@ -20,13 +21,14 @@ final class CodeSmellsEditorCommand: NSObject, XCSourceEditorCommand {
             do {
                 let suggestion = try await self.useCase.searchForCodeSmells(in: codeLines)
                 
-                let insertedSuggestion = "/**\n\(suggestion.result)\n*/"
+                let insertedSuggestion = "/**\(suggestion.result)\n*/"
                 
-                invocation.buffer.lines.removeAllObjects()
-                invocation.buffer.lines.add(suggestion.result)
+                invocation.buffer.lines.add(insertedSuggestion)
             } catch let error {
                 print("🚨 Something goes wrong... \(error)")
             }
+            
+            completionHandler(nil)
         }
     }
 }

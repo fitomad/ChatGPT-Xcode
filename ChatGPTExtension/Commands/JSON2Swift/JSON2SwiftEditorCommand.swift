@@ -8,7 +8,7 @@
 import Foundation
 import XcodeKit
 
-class SourceEditorCommand: NSObject, XCSourceEditorCommand {
+class JSON2SwiftEditorCommand: NSObject, XCSourceEditorCommand {
     let useCase: JSONConverterUseCase = DependencyManager.makeAnalyzeDependencies()
     
     func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void ) -> Void {
