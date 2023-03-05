@@ -21,8 +21,8 @@ class JSON2SwiftEditorCommand: NSObject, XCSourceEditorCommand {
             do {
                 let suggestion = try await self.useCase.analyze(source: codeLines)
                 
-                invocation.buffer.lines.removeAllObjects()
-                invocation.buffer.lines.add(suggestion.result)
+                invocation.buffer.selections.removeAllObjects()
+                invocation.buffer.selections.add(suggestion.result)
             } catch let error {
                 print("🚨 Something goes wrong... \(error)")
             }
