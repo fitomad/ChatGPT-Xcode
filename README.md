@@ -1,5 +1,7 @@
 # ChatGPT-Xcode
 
+Este repositorio sirve como base al artículo en Medium titulado [Integración de ChatGPT en Xcode: Cómo mejorar tus Apps con IA](https://medium.com/@FitoMAD/integración-de-chatgpt-en-xcode-cómo-mejorar-tus-apps-con-ia-d78df95cfc8b)
+
 Integrar ChatGPT en Xcode usando una Xcode Source Editor Extension que da solución a tres problemas concretos:
 
 * **Conversión de código**. Un comando que convierta un documento JSON a una struct de Swift.
