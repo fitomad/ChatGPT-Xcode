@@ -7,5 +7,5 @@
 */
 
 "PROMPT_JSON" = "Convert this JSON to a Swift Codable data structure only struct declaration";
-"PROMPT_CODE_SMELLS" = "Check for Code Smells in this Swift code";
-"PROMPT_EXPLAIN_CODE" = "What this Swift code does?";
+"PROMPT_CODE_SMELLS" = "Act as a Swift developer. Check for Code Smells in this Swift code";
+"PROMPT_EXPLAIN_CODE" = "Act as a Swift developer. What this Swift code does?";
