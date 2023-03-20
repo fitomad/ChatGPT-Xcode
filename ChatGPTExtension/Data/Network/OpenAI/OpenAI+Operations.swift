@@ -31,4 +31,10 @@ extension OpenAI {
         
         return try await processRequestFor(prompt: testsPrompt)
     }
+    
+    func generateRegexFor(string value: String) async throws -> ChatGPTResponse {
+        let regexPrompt = "\(localizedPrompt("PROMPT_REGEX")) \(value)"
+        
+        return try await processRequestFor(prompt: regexPrompt)
+    }
 }
