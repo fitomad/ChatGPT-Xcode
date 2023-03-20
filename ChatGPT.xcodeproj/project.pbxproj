@@ -21,6 +21,7 @@
 		91893E9429C7C0AC00AFF495 /* ChatGPTUnitTestRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91893E9329C7C0AC00AFF495 /* ChatGPTUnitTestRepository.swift */; };
 		91A043D629B48CB60077238E /* OpenAI+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A043D529B48CB60077238E /* OpenAI+Operations.swift */; };
 		91B2577329C8D7C900E11003 /* RegexUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B2577229C8D7C900E11003 /* RegexUseCase.swift */; };
+		91B2577529C8D85600E11003 /* DefaultRegexUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B2577429C8D85600E11003 /* DefaultRegexUseCase.swift */; };
 		91BCF70629B3C18E00C022E9 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FFEE6729B2824B00B4DE2A /* XcodeKit.framework */; };
 		91BCF70729B3C18E00C022E9 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91FFEE6729B2824B00B4DE2A /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		91CD167629B3D8FF0018CA5A /* openai.environment in Resources */ = {isa = PBXBuildFile; fileRef = 91CD167529B3D8FF0018CA5A /* openai.environment */; };
@@ -105,6 +106,7 @@
 		91893E9329C7C0AC00AFF495 /* ChatGPTUnitTestRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTUnitTestRepository.swift; sourceTree = "<group>"; };
 		91A043D529B48CB60077238E /* OpenAI+Operations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OpenAI+Operations.swift"; sourceTree = "<group>"; };
 		91B2577229C8D7C900E11003 /* RegexUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexUseCase.swift; sourceTree = "<group>"; };
+		91B2577429C8D85600E11003 /* DefaultRegexUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRegexUseCase.swift; sourceTree = "<group>"; };
 		91CD167529B3D8FF0018CA5A /* openai.environment */ = {isa = PBXFileReference; lastKnownFileType = text; path = openai.environment; sourceTree = "<group>"; };
 		91CD167929B3F1EF0018CA5A /* CodeSmellsEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSmellsEditorCommand.swift; sourceTree = "<group>"; };
 		91CD167B29B3F35B0018CA5A /* CodeSmellsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSmellsUseCase.swift; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				91B2577229C8D7C900E11003 /* RegexUseCase.swift */,
+				91B2577429C8D85600E11003 /* DefaultRegexUseCase.swift */,
 			);
 			path = Regex;
 			sourceTree = "<group>";
@@ -591,6 +594,7 @@
 				91CD168429B3F7970018CA5A /* BaseChatGPTRepository.swift in Sources */,
 				91FAD37229B478FD00917E35 /* DefaultExplainCodeUseCase.swift in Sources */,
 				9126724829B359CA0076A294 /* JSONConverterRepository.swift in Sources */,
+				91B2577529C8D85600E11003 /* DefaultRegexUseCase.swift in Sources */,
 				91E2684C29B39B6F0098BBB5 /* DefaultJSONConverterUseCase.swift in Sources */,
 				91E2684A29B39ACC0098BBB5 /* JSONConverterUseCase.swift in Sources */,
 				91CD167C29B3F35B0018CA5A /* CodeSmellsUseCase.swift in Sources */,
