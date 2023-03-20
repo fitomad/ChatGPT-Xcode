@@ -17,3 +17,5 @@ jobs:
           openai-api-key: ${{ secrets.OPENAI_API_KEY }}
           github-token: ${{ secrets.GH_TOKEN }}
           github-pr-id: ${{ github.event.number }}
+          dev-lang: Swift
+          openai-max-tokens: 3740
