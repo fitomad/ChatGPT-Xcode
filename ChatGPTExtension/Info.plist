@@ -34,6 +34,15 @@
                     <key>XCSourceEditorCommandName</key>
                     <string>Explain me this code</string>
                 </dict>
+                
+                <dict>
+                    <key>XCSourceEditorCommandClassName</key>
+                    <string>$(PRODUCT_MODULE_NAME).UnitTestEditorCommand</string>
+                    <key>XCSourceEditorCommandIdentifier</key>
+                    <string>$(PRODUCT_BUNDLE_IDENTIFIER).UnitTestEditorCommand</string>
+                    <key>XCSourceEditorCommandName</key>
+                    <string>Generate tests for this function</string>
+                </dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
 			<string>$(PRODUCT_MODULE_NAME).SourceEditorExtension</string>

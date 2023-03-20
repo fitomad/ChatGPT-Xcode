@@ -28,5 +28,12 @@ final class DependencyManager {
         
         return useCase
     }
+    
+    static func makeUnitTestsDependencies() -> UnitTestUseCase {
+        let unitTestRepository: UnitTestRepository = ChatGPTUnitTestRepository()
+        let useCase: UnitTestUseCase = DefaultUnitTestUseCase(repository: unitTestRepository)
+        
+        return useCase
+    }
 }
 
