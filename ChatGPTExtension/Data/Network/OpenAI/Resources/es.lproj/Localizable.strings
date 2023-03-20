@@ -10,4 +10,5 @@
 "PROMPT_CODE_SMELLS" = "Compórtate como un desarrollador Swift. Busca posibles Code Smells en este código escrito en Swift";
 "PROMPT_EXPLAIN_CODE" = "Compórtate como un desarrollador Swift. ¿Qué hace este código escrito en Swift?";
 "PROMPT_GENERATE_UNIT_TEST" = "Compórtate como un desarrollador Swift. Genera las pruebas para este código usando el framework XCTest";
+"PROMPT_REGEX" = "Compórtate como un desarrollador SWift. Genera una expresión regular usando el API Regex que represente";
 

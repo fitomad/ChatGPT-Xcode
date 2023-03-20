@@ -25,4 +25,10 @@ extension OpenAI {
         
         return try await processRequestFor(prompt: explainPrompt)
     }
+    
+    func generateTestsFor(source code: String) async throws -> ChatGPTResponse {
+        let testsPrompt = "\(localizedPrompt("PROMPT_GENERATE_UNIT_TEST")) \(code)"
+        
+        return try await processRequestFor(prompt: testsPrompt)
+    }
 }
