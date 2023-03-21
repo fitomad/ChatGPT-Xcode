@@ -43,6 +43,15 @@
                     <key>XCSourceEditorCommandName</key>
                     <string>Generate tests for this function</string>
                 </dict>
+                
+                <dict>
+                    <key>XCSourceEditorCommandClassName</key>
+                    <string>$(PRODUCT_MODULE_NAME).RegexCommand</string>
+                    <key>XCSourceEditorCommandIdentifier</key>
+                    <string>$(PRODUCT_BUNDLE_IDENTIFIER).RegexCommand</string>
+                    <key>XCSourceEditorCommandName</key>
+                    <string>Generate regular expression based on a sample string</string>
+                </dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
 			<string>$(PRODUCT_MODULE_NAME).SourceEditorExtension</string>

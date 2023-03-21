@@ -7,8 +7,8 @@
 */
 
 "PROMPT_JSON" = "Convert this JSON to a Swift Codable data structure only struct declaration";
-"PROMPT_CODE_SMELLS" = "Act as a Swift developer. Check for Code Smells in this Swift code";
-"PROMPT_EXPLAIN_CODE" = "Act as a Swift developer. What this Swift code does?";
-"PROMPT_GENERATE_UNIT_TEST" = "Act as a Swift developer. Write the test cases in Swift for this code using the XCTest framework.";
-"PROMPT_REGEX" = "Act as a SWift developer. Generate a regular expression using Regex to match";
+"PROMPT_CODE_SMELLS" = "Check for Code Smells in this Swift code";
+"PROMPT_EXPLAIN_CODE" = "What this Swift code does?";
+"PROMPT_GENERATE_UNIT_TEST" = "Write the test cases in Swift for this code using the XCTest framework.";
+"PROMPT_REGEX" = "Generate a regular expression using Regex to match";
 

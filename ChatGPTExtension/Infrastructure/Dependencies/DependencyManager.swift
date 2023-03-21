@@ -35,5 +35,12 @@ final class DependencyManager {
         
         return useCase
     }
+    
+    static func makeRegexDependencies() -> RegexUseCase {
+        let regexRepository: RegexRepository = ChatGPTRegexRepository()
+        let useCase: RegexUseCase = DefaultRegexUseCase(repository: regexRepository)
+        
+        return useCase
+    }
 }
 
