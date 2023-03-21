@@ -7,8 +7,8 @@
 */
 
 "PROMPT_JSON" = "Convierte este JSON a una estructura Swift Codable pero sin la implementación";
-"PROMPT_CODE_SMELLS" = "Compórtate como un desarrollador Swift. Busca posibles Code Smells en este código escrito en Swift";
-"PROMPT_EXPLAIN_CODE" = "Compórtate como un desarrollador Swift. ¿Qué hace este código escrito en Swift?";
-"PROMPT_GENERATE_UNIT_TEST" = "Compórtate como un desarrollador Swift. Genera las pruebas para este código usando el framework XCTest";
-"PROMPT_REGEX" = "Compórtate como un desarrollador SWift. Genera una expresión regular usando el API Regex que represente";
+"PROMPT_CODE_SMELLS" = "Busca posibles Code Smells en este código escrito en Swift";
+"PROMPT_EXPLAIN_CODE" = "¿Qué hace este código escrito en Swift?";
+"PROMPT_GENERATE_UNIT_TEST" = "Genera las pruebas para este código usando el framework XCTest";
+"PROMPT_REGEX" = "Genera una expresión regular en Swift que represente esta cadena de texto";
 
