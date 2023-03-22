@@ -25,7 +25,6 @@
 		91B2577529C8D85600E11003 /* DefaultRegexUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B2577429C8D85600E11003 /* DefaultRegexUseCase.swift */; };
 		91BCF70629B3C18E00C022E9 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FFEE6729B2824B00B4DE2A /* XcodeKit.framework */; };
 		91BCF70729B3C18E00C022E9 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91FFEE6729B2824B00B4DE2A /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		91CD167629B3D8FF0018CA5A /* openai.environment in Resources */ = {isa = PBXBuildFile; fileRef = 91CD167529B3D8FF0018CA5A /* openai.environment */; };
 		91CD167A29B3F1EF0018CA5A /* CodeSmellsEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CD167929B3F1EF0018CA5A /* CodeSmellsEditorCommand.swift */; };
 		91CD167C29B3F35B0018CA5A /* CodeSmellsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CD167B29B3F35B0018CA5A /* CodeSmellsUseCase.swift */; };
 		91CD167E29B3F39C0018CA5A /* DefaultCodeSmellsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CD167D29B3F39C0018CA5A /* DefaultCodeSmellsUseCase.swift */; };
@@ -110,7 +109,6 @@
 		91A043D529B48CB60077238E /* OpenAI+Operations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OpenAI+Operations.swift"; sourceTree = "<group>"; };
 		91B2577229C8D7C900E11003 /* RegexUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexUseCase.swift; sourceTree = "<group>"; };
 		91B2577429C8D85600E11003 /* DefaultRegexUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRegexUseCase.swift; sourceTree = "<group>"; };
-		91CD167529B3D8FF0018CA5A /* openai.environment */ = {isa = PBXFileReference; lastKnownFileType = text; path = openai.environment; sourceTree = "<group>"; };
 		91CD167929B3F1EF0018CA5A /* CodeSmellsEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSmellsEditorCommand.swift; sourceTree = "<group>"; };
 		91CD167B29B3F35B0018CA5A /* CodeSmellsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSmellsUseCase.swift; sourceTree = "<group>"; };
 		91CD167D29B3F39C0018CA5A /* DefaultCodeSmellsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCodeSmellsUseCase.swift; sourceTree = "<group>"; };
@@ -302,14 +300,6 @@
 			path = Commands;
 			sourceTree = "<group>";
 		};
-		91CD167429B3D8C90018CA5A /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				91CD167529B3D8FF0018CA5A /* openai.environment */,
-			);
-			path = Settings;
-			sourceTree = "<group>";
-		};
 		91CD167729B3F1860018CA5A /* JSON2Swift */ = {
 			isa = PBXGroup;
 			children = (
@@ -403,7 +393,6 @@
 			children = (
 				91FFEE6E29B2824B00B4DE2A /* Info.plist */,
 				91FFEE6F29B2824B00B4DE2A /* ChatGPTExtension.entitlements */,
-				D8E6234B29CB93690072A861 /* openai.environment */,
 				911729AA29B32E580066F46E /* Infrastructure */,
 				91FFEE7729B2828E00B4DE2A /* Data */,
 				911729A629B32E0D0066F46E /* Domain */,
@@ -415,7 +404,7 @@
 		91FFEE7729B2828E00B4DE2A /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				91CD167429B3D8C90018CA5A /* Settings */,
+				D8E6234D29CB9D1A0072A861 /* Settings */,
 				91FFEE7A29B282B700B4DE2A /* Repositories */,
 				91FFEE7829B2829900B4DE2A /* Network */,
 			);
@@ -465,6 +454,14 @@
 				91FFEE7E29B2854200B4DE2A /* NetworkRequest.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D8E6234D29CB9D1A0072A861 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D8E6234B29CB93690072A861 /* openai.environment */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -561,7 +558,6 @@
 			files = (
 				D8E6234C29CB93690072A861 /* openai.environment in Resources */,
 				91E2685729B3ADDE0098BBB5 /* Localizable.strings in Resources */,
-				91CD167629B3D8FF0018CA5A /* openai.environment in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
