@@ -55,6 +55,7 @@
 		91FFEE7C29B2838000B4DE2A /* OpenAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFEE7B29B2838000B4DE2A /* OpenAI.swift */; };
 		91FFEE7F29B2854200B4DE2A /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFEE7E29B2854200B4DE2A /* NetworkRequest.swift */; };
 		91FFEE8329B288F000B4DE2A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFEE8229B288F000B4DE2A /* Constants.swift */; };
+		D8E6234C29CB93690072A861 /* openai.environment in Resources */ = {isa = PBXBuildFile; fileRef = D8E6234B29CB93690072A861 /* openai.environment */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +146,7 @@
 		91FFEE7B29B2838000B4DE2A /* OpenAI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAI.swift; sourceTree = "<group>"; };
 		91FFEE7E29B2854200B4DE2A /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		91FFEE8229B288F000B4DE2A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D8E6234B29CB93690072A861 /* openai.environment */ = {isa = PBXFileReference; lastKnownFileType = text; path = openai.environment; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -401,6 +403,7 @@
 			children = (
 				91FFEE6E29B2824B00B4DE2A /* Info.plist */,
 				91FFEE6F29B2824B00B4DE2A /* ChatGPTExtension.entitlements */,
+				D8E6234B29CB93690072A861 /* openai.environment */,
 				911729AA29B32E580066F46E /* Infrastructure */,
 				91FFEE7729B2828E00B4DE2A /* Data */,
 				911729A629B32E0D0066F46E /* Domain */,
@@ -556,6 +559,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8E6234C29CB93690072A861 /* openai.environment in Resources */,
 				91E2685729B3ADDE0098BBB5 /* Localizable.strings in Resources */,
 				91CD167629B3D8FF0018CA5A /* openai.environment in Resources */,
 			);
