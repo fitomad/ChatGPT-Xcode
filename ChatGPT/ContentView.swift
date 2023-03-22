@@ -12,8 +12,8 @@ struct ContentView: View {
         Text("ChatGPT & Xcode")
             .font(.largeTitle)
             .fontWidth(.condensed)
-            .padding()
             .frame(maxWidth: .infinity, alignment: .center)
+            .padding()
     }
 }
 
