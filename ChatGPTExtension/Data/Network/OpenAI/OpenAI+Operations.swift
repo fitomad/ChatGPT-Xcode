@@ -37,4 +37,10 @@ extension OpenAI {
         
         return try await processRequestFor(prompt: regexPrompt)
     }
+    
+    func comment(function code: String) async throws -> ChatGPTResponse {
+        let commentPrompt = "\(localizedPrompt("PROMPT_COMMENT")) \(code)"
+        
+        return try await processRequestFor(prompt: commentPrompt)
+    }
 }

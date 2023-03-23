@@ -42,5 +42,12 @@ final class DependencyManager {
         
         return useCase
     }
+    
+    static func makeCommentDependencies() -> CommentUseCase {
+        let commentRepository: CommentRepository = ChatGPTCommentRepository()
+        let useCase: CommentUseCase = DefaultCommentUseCase(repository: commentRepository)
+        
+        return useCase
+    }
 }
 

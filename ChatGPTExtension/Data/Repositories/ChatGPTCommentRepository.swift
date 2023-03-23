@@ -1,14 +1,14 @@
 //
-//  ChatGPTAnalyzeRepository.swift
+//  ChatGPTCommentRepository.swift
 //  ChatGPTExtension
 //
-//  Created by Adolfo Vera Blasco on 4/3/23.
+//  Created by Adolfo Vera Blasco on 22/3/23.
 //
 
 import Foundation
 
-final class ChatGPTJSONConverterRepository: BaseChatGPTRepository, JSONConverterRepository {
-    func analyze(code: String) async throws -> [Suggestion] {
+final class ChatGPTCommentRepository: BaseChatGPTRepository, CommentRepository {
+    func comment(function code: String) async throws -> [Suggestion] {
         guard let apiKey = super.fetchApiKey() else {
             throw ConverterError.authorization
         }
@@ -18,7 +18,7 @@ final class ChatGPTJSONConverterRepository: BaseChatGPTRepository, JSONConverter
         var suggestions: [Suggestion]?
         
         do {
-            let chatpGPTResponse = try await openAI.analyze(source: code)
+            let chatpGPTResponse = try await openAI.comment(function: code)
             
             suggestions = chatpGPTResponse.choices.map { choice in
                 let suggestion = Suggestion(result: choice.message.content)
