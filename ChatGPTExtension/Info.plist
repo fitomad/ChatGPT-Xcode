@@ -52,6 +52,16 @@
                     <key>XCSourceEditorCommandName</key>
                     <string>Generate regular expression based on a sample string</string>
                 </dict>
+                
+                <dict>
+                    <key>XCSourceEditorCommandClassName</key>
+                    <string>$(PRODUCT_MODULE_NAME).CommentCommand</string>
+                    <key>XCSourceEditorCommandIdentifier</key>
+                    <string>$(PRODUCT_BUNDLE_IDENTIFIER).CommentCommand</string>
+                    <key>XCSourceEditorCommandName</key>
+                    <string>Add Swift comments</string>
+                </dict>
+                
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
 			<string>$(PRODUCT_MODULE_NAME).SourceEditorExtension</string>

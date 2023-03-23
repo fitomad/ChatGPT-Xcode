@@ -55,6 +55,11 @@
 		91FFEE7F29B2854200B4DE2A /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFEE7E29B2854200B4DE2A /* NetworkRequest.swift */; };
 		91FFEE8329B288F000B4DE2A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFEE8229B288F000B4DE2A /* Constants.swift */; };
 		D8E6234C29CB93690072A861 /* openai.environment in Resources */ = {isa = PBXBuildFile; fileRef = D8E6234B29CB93690072A861 /* openai.environment */; };
+		D8E6234F29CBA0530072A861 /* CommentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E6234E29CBA0530072A861 /* CommentRepository.swift */; };
+		D8E6235129CBA08C0072A861 /* ChatGPTCommentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E6235029CBA08C0072A861 /* ChatGPTCommentRepository.swift */; };
+		D8E6235429CBA1120072A861 /* CommentUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E6235329CBA1120072A861 /* CommentUseCase.swift */; };
+		D8E6235629CBA1580072A861 /* DefaultCommentUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E6235529CBA1580072A861 /* DefaultCommentUseCase.swift */; };
+		D8E6235929CBA20E0072A861 /* CommentCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E6235829CBA20E0072A861 /* CommentCommand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +150,11 @@
 		91FFEE7E29B2854200B4DE2A /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		91FFEE8229B288F000B4DE2A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D8E6234B29CB93690072A861 /* openai.environment */ = {isa = PBXFileReference; lastKnownFileType = text; path = openai.environment; sourceTree = "<group>"; };
+		D8E6234E29CBA0530072A861 /* CommentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRepository.swift; sourceTree = "<group>"; };
+		D8E6235029CBA08C0072A861 /* ChatGPTCommentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTCommentRepository.swift; sourceTree = "<group>"; };
+		D8E6235329CBA1120072A861 /* CommentUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentUseCase.swift; sourceTree = "<group>"; };
+		D8E6235529CBA1580072A861 /* DefaultCommentUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCommentUseCase.swift; sourceTree = "<group>"; };
+		D8E6235829CBA20E0072A861 /* CommentCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCommand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +199,7 @@
 		911729A829B32E230066F46E /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				D8E6235229CBA0FE0072A861 /* Comments */,
 				91B2577129C8D7B700E11003 /* Regex */,
 				91893E8C29C7BFB500AFF495 /* UnitTest */,
 				91AE7F6F29B48BB20037466B /* ExplainCode */,
@@ -206,6 +217,7 @@
 				91FAD37329B4796600917E35 /* ExplainCodeRepository.swift */,
 				91893E9129C7C07500AFF495 /* UnitTestRepository.swift */,
 				913C1D9129C8D2F300EE95B6 /* RegexRepository.swift */,
+				D8E6234E29CBA0530072A861 /* CommentRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -290,6 +302,7 @@
 		91BCF70529B3C0D700C022E9 /* Commands */ = {
 			isa = PBXGroup;
 			children = (
+				D8E6235729CBA1F80072A861 /* Comment */,
 				9134BA4B29CA1C9100784AF2 /* Regex */,
 				91893E8929C7BE3D00AFF495 /* UnitTest */,
 				91FAD36C29B4782E00917E35 /* ExplainCode */,
@@ -440,6 +453,7 @@
 				91FAD37529B47AEA00917E35 /* ChatGPTExplainCodeRepository.swift */,
 				91893E9329C7C0AC00AFF495 /* ChatGPTUnitTestRepository.swift */,
 				913C1D9329C8D32400EE95B6 /* ChatGPTRegexRepository.swift */,
+				D8E6235029CBA08C0072A861 /* ChatGPTCommentRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -462,6 +476,23 @@
 				D8E6234B29CB93690072A861 /* openai.environment */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		D8E6235229CBA0FE0072A861 /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				D8E6235329CBA1120072A861 /* CommentUseCase.swift */,
+				D8E6235529CBA1580072A861 /* DefaultCommentUseCase.swift */,
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		D8E6235729CBA1F80072A861 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				D8E6235829CBA20E0072A861 /* CommentCommand.swift */,
+			);
+			path = Comment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -578,6 +609,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91FAD37029B478A000917E35 /* ExplainCodeUseCase.swift in Sources */,
+				D8E6235429CBA1120072A861 /* CommentUseCase.swift in Sources */,
 				913C1D9229C8D2F300EE95B6 /* RegexRepository.swift in Sources */,
 				91FFEE8329B288F000B4DE2A /* Constants.swift in Sources */,
 				91FAD37629B47AEA00917E35 /* ChatGPTExplainCodeRepository.swift in Sources */,
@@ -597,7 +629,9 @@
 				91FAD37429B4796600917E35 /* ExplainCodeRepository.swift in Sources */,
 				91B2577329C8D7C900E11003 /* RegexUseCase.swift in Sources */,
 				91CD168229B3F5410018CA5A /* ChatGPTCodeSmellsRepository.swift in Sources */,
+				D8E6234F29CBA0530072A861 /* CommentRepository.swift in Sources */,
 				91E2685329B3AA2C0098BBB5 /* ChatGPTRequest.swift in Sources */,
+				D8E6235629CBA1580072A861 /* DefaultCommentUseCase.swift in Sources */,
 				91FFEE6B29B2824B00B4DE2A /* SourceEditorExtension.swift in Sources */,
 				91FAD36E29B4784800917E35 /* ExplainCodeCommand.swift in Sources */,
 				91893E9229C7C07500AFF495 /* UnitTestRepository.swift in Sources */,
@@ -607,6 +641,7 @@
 				91FAD37229B478FD00917E35 /* DefaultExplainCodeUseCase.swift in Sources */,
 				9126724829B359CA0076A294 /* JSONConverterRepository.swift in Sources */,
 				91B2577529C8D85600E11003 /* DefaultRegexUseCase.swift in Sources */,
+				D8E6235929CBA20E0072A861 /* CommentCommand.swift in Sources */,
 				91E2684C29B39B6F0098BBB5 /* DefaultJSONConverterUseCase.swift in Sources */,
 				91E2684A29B39ACC0098BBB5 /* JSONConverterUseCase.swift in Sources */,
 				91CD167C29B3F35B0018CA5A /* CodeSmellsUseCase.swift in Sources */,
@@ -615,6 +650,7 @@
 				911729AF29B32FFB0066F46E /* ChatGPTResponse.swift in Sources */,
 				91893E9429C7C0AC00AFF495 /* ChatGPTUnitTestRepository.swift in Sources */,
 				91E2685629B3AC820098BBB5 /* OpenAI+Localizable.swift in Sources */,
+				D8E6235129CBA08C0072A861 /* ChatGPTCommentRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -766,7 +802,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatGPT/Preview Content\"";
-				DEVELOPMENT_TEAM = KQUX9WVW3M;
+				DEVELOPMENT_TEAM = P8RCF8HS85;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -795,7 +831,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatGPT/Preview Content\"";
-				DEVELOPMENT_TEAM = KQUX9WVW3M;
+				DEVELOPMENT_TEAM = P8RCF8HS85;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -820,7 +856,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KQUX9WVW3M;
+				DEVELOPMENT_TEAM = P8RCF8HS85;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChatGPTExtension/Info.plist;
@@ -848,7 +884,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KQUX9WVW3M;
+				DEVELOPMENT_TEAM = P8RCF8HS85;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChatGPTExtension/Info.plist;

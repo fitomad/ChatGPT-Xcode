@@ -11,4 +11,5 @@
 "PROMPT_EXPLAIN_CODE" = "What this Swift code does?";
 "PROMPT_GENERATE_UNIT_TEST" = "Write the test cases in Swift for this code using the XCTest framework.";
 "PROMPT_REGEX" = "Generate a regular expression using Regex to match";
+"PROMPT_COMMENT" = "Generate comments in Swift format for this function, indicating the parameters and return type, with a max line lenght of 80 characters";
 
