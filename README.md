@@ -1,15 +1,17 @@
 # ChatGPT-Xcode
 
-Este repositorio sirve como base al artículo en Medium titulado [Integración de ChatGPT en Xcode: Cómo mejorar tus Apps con IA](https://medium.com/@FitoMAD/integración-de-chatgpt-en-xcode-cómo-mejorar-tus-apps-con-ia-d78df95cfc8b)
+This repository serves as the basis for the Medium article titled ["Integrating ChatGPT into Xcode: How to Improve Your Apps with AI."](https://medium.com/globant/chatgpt-integration-in-xcode-how-to-improve-your-apps-with-ai-3bdbc34bea48)
 
-Integrar ChatGPT en Xcode usando una Xcode Source Editor Extension que da solución a tres problemas concretos:
+Integrating ChatGPT into Xcode using an Xcode Source Editor Extension that solves three specific problems:
 
-* **Conversión de código**. Un comando que convierta un documento JSON a una struct de Swift.
-* **Code Smells**. Le pedimos a ChatGPT que trate de identificar cosas que se puedan mejorar en nuestro código fuente
-* **Explicar el código**. En este último caso nos interesa saber qué es lo que hace un código determinado.
+* **Code conversion**. A command that converts a JSON document to a Swift struct.
+* **Code smells**. We ask ChatGPT to try to identify things that can be improved in our source code.
+* **Code explanation**. In this last case, we are interested in knowing what a particular code does.
+* **Unit testing**. Generate XCTest code for the current file.
+* **Regex**. Creates a regular expression based on the selected text string.
 
 ## OpenAI API Key
 
-Para poder ejecutar los comando de la extensión se necesita un API key de OpenAI que debe guardarse en un archivo llamado `openai.environment` y que sólo contendrá la clave.
+To execute the extension commands, an OpenAI API key is required, which must be saved in a file called `openai.environment` and will only contain the key.
 
-Este archivo debe estar incluido en el target de la extensión Xcode.
+This file must be included in the Xcode extension target.
