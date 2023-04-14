@@ -15,3 +15,9 @@ Integrating ChatGPT into Xcode using an Xcode Source Editor Extension that solve
 To execute the extension commands, an OpenAI API key is required, which must be saved in a file called `openai.environment` and will only contain the key.
 
 This file must be included in the Xcode extension target.
+
+## Disclaimer. Read carefully
+
+Usage of this Source Code Extension will **send your source code to ChatGPT**, please note that due to the nature of the internet, It does not guarantee the security of any information transmitted to OpenAI, including source code.
+
+Before using code that you don't own with this Source Code Extension, contact its owner to obtain the necessary permission.
